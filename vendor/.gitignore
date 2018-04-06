@@ -1,0 +1,4 @@
+# git rm --cached FILENAME
+# uncomment for github
+vendor/tokens.php
+vendor/useriddecrypt.php
