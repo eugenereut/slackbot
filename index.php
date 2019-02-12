@@ -370,7 +370,7 @@ function fnctn_user($textstr, $user)
 function fnctn_about($textstr = null, $user = null)
 {
   if ($textstr === 'about') {
-    $sendmsg = "Lightburroway is a budget editor for the family and small business.\n";
+    $sendmsg = "Website is a budget editor for the family and small business.\n";
     $sendmsg .= "Allows to create and edit a budget without having to connect to bank accounts.";
   } else {
     $sendmsg = fnctn_help($textstr, $user);
@@ -393,10 +393,10 @@ function fnctn_help($textstr, $user)
     $sendmsg .= "`/lbw add out X X XXXX.XX` Add outgoing ID-name ID-account amount (/lbw add out 3 1 84.51).\n";
     $sendmsg .= "`/lbw tr X X XXXX.XX` Transfer from ID-account to ID-account amount (/lbw tr 2 1 100.00).\n";
     $sendmsg .= "`/lbw user` Who is.\n";
-    $sendmsg .= "`/lbw user -a` All users Lightburroway on the channel.\n";
-    $sendmsg .= "`/lbw user -u username` Sets the user Lightburroway to the channel.\n";
+    $sendmsg .= "`/lbw user -a` All users Website on the channel.\n";
+    $sendmsg .= "`/lbw user -u username` Sets the user Website to the channel.\n";
     $sendmsg .= "`/lbw help` Lists available commands.\n";
-    $sendmsg .= "`/lbw about` What is Lightburroway.";
+    $sendmsg .= "`/lbw about` What is Website.";
   } else {
     $sendmsg = "Hello, I try to be helpful. (But I’m still just a bot. Sorry!)\nType `/lbw help` to get started.";
   }
@@ -425,7 +425,7 @@ if ( isset( $_REQUEST['action'] ) ) {
 ?>
 <html>
     <head>
-        <title>Lightburroway and Slack Integration</title>
+        <title>Website and Slack Integration</title>
         <style>
             body {
                 font-family: Helvetica, sans-serif;
@@ -446,17 +446,16 @@ if ( isset( $_REQUEST['action'] ) ) {
       <?php if ( $result_message ) : ?>
            <p class="notification"><?php echo $result_message; ?></p>
       <?php endif; ?>
-        <h1><a href="https://lightburroway.com">Lightburroway</a><br>and Slack Integration</h1>
+        <h1><a href="Website">Website</a><br>and Slack Integration</h1>
         <br>
         <h2><span class="wrapper">Summary of what bot app does and how it integrates with Slack</span></h2>
         <ul>
-        <li>Lightburroway is a budget editor. It allows you to create and edit a budget without having to connect to bank accounts.</li>
         <br>
-        <li><span class="bold">Access to the Slack button for the app is behind a login page, you'll need a Lightburroway <a href="/login/createaccount" target="_blank"><span>account</span></a> in order to use our services.</span></li>
+        <li><span class="bold">Access to the Slack button for the app is behind a login page, you'll need a <a href="/login/createaccount" target="_blank"><span>account</span></a> in order to use our services.</span></li>
         <li>The <a href="/notifications/slckbot" target="_blank">notifications</a> page displays the button
           <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"> for users to install the app.
         </li>
-        <li>If you encounter problems or need help, please contact to our team on <a href="mailto:lightburroway@gmail.com">lightburroway@gmail.com</a></li>
+        <li>If you encounter problems or need help, please contact to our team on <a href="mailto:">mail</a></li>
         </ul>
         <br>
         <h2><span class="wrapper">Bot responds to commands</span></h2>
@@ -542,27 +541,27 @@ if ( isset( $_REQUEST['action'] ) ) {
             <td><span class="bold">/lbw user</span></td><td class="table_td">Who is.</td>
           </tr>
           <tr>
-            <td><span class="bold">/lbw user -a</span></td><td class="table_td">All users Lightburroway on the channel.</td>
+            <td><span class="bold">/lbw user -a</span></td><td class="table_td">All users Website on the channel.</td>
           </tr>
           <tr>
-            <td><span class="bold">/lbw user -u username</span></td><td class="table_td">Sets the user Lightburroway to the channel.</td>
+            <td><span class="bold">/lbw user -u username</span></td><td class="table_td">Sets the user Website to the channel.</td>
           </tr>
           <tr>
             <td><span class="bold">/lbw help</span></td><td class="table_td">Lists available commands.</td>
           </tr>
           <tr>
-            <td><span class="bold">/lbw about</span></td><td class="table_td">What is Lightburroway.</td>
+            <td><span class="bold">/lbw about</span></td><td class="table_td">What is Website.</td>
           </tr>
         </table>
         <br>
         <h2><span class="wrapper"><a name="PP">Privacy policy</a></span></h2>
         <ul>
-        <li>Lightburroway and bot app are not using any third-party data.</li>
-        <li>Lightburroway is a budget editor without having to connect to bank accounts.</li>
+        <li>Website and bot app are not using any third-party data.</li>
+        <li>Website is a budget editor without having to connect to bank accounts.</li>
         <li>Our Services allow you to submit, store, send or receive content.<br>
           You retain ownership of any intellectual property rights that you hold in that content.<br>
           In short, what belongs to you stays yours.</li>
-        <li>Lightburroway not share your data with third parties, and user data is not sold.</li>
+        <li>Website not share your data with third parties, and user data is not sold.</li>
         </ul>
     </body>
 </html>
